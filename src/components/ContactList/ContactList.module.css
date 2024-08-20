@@ -4,10 +4,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px 40px;
-  background-color: #b8b8ff87;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: var(--shadow);
 }
 
 .contactItem {
