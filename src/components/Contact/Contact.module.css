@@ -1,15 +1,24 @@
 .textWrapper {
+  width: 230px;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
 }
 
 .name {
+  width: 210px;
   font-size: 20px;
+  text-wrap: wrap;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .number {
+  width: 210px;
   font-size: 16px;
+  text-wrap: wrap;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .iconWrapper {
@@ -25,16 +34,25 @@
   align-items: center;
   padding: 10px;
   border-radius: 8px;
-  border: none;
-  background-color: var(--color-dark-purple);
-  color: var(--color-white);
   cursor: pointer;
   position: absolute;
   top: 30%;
   right: 15px;
-  transition: all var(--animation-cubicBezier);
-
+  --bg: #000;
+  --hover-bg: #000;
+  --hover-text: #000;
+  color: #fff;
+  border: 1px solid var(--bg);
+  background: var(--color-dark-purple);
+  transition: 0.2s;
   &:hover {
-    background-color: var(--color-purple);
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--color-purple);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  &:active {
+    transform: translate(0);
+    box-shadow: none;
   }
 }

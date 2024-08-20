@@ -1,4 +1,5 @@
 .contactsList {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6,15 +7,20 @@
   background-color: #b8b8ff87;
   padding: 40px;
   border-radius: 8px;
-  margin-top: 20px;
   box-shadow: var(--shadow);
 }
 
 .contactItem {
-  min-width: 300px;
+  width: 350px;
+  height: 120px;
   border-radius: 16px;
-  box-shadow: var(--shadow);
   background-color: var(--color-white);
   padding: 20px;
   position: relative;
+  background-image: linear-gradient(163deg, #9481ff28 0%, #f8f7ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 30px 1px #9481ffa4;
+  }
 }

@@ -34,3 +34,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
