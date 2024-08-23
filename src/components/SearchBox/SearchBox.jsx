@@ -6,7 +6,6 @@ import { changeFilter } from "../../redux/filtersSlice.js";
 const SearchBox = () => {
   const dispatch = useDispatch();
   const filterValue = useSelector(selectNameFilter);
-  console.log("Calculating task count");
   return (
     <div className={s.wrapper}>
       <label className={s.label}>
