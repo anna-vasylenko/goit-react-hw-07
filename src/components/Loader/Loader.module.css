@@ -1,6 +1,6 @@
 .loader {
   position: fixed;
-  left: 20px;
+  right: 20px;
   top: 60px;
   display: flex;
   align-items: center;
