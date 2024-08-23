@@ -25,13 +25,13 @@ function App() {
           <ContactForm />
           <SearchBox />
         </div>
+        <ContactList />
         {isLoading && <Loader />}
         {isError && (
           <p className={s.errorMessage}>
             Something went wrong, try again later!
           </p>
         )}
-        <ContactList />
       </div>
     </>
   );
